@@ -2,7 +2,7 @@
 """
 Created on Wed Jan  1 16:29:49 2025
 
-@author: VW1WBMY
+@author: Marboe
 """
 
 with open('C:/Users/VW1WBMY/AdventofCode/Day03/input_data.txt') as file:
