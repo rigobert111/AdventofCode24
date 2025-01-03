@@ -7,7 +7,7 @@ Created on Wed Jan  1 16:29:49 2025
 import numpy as np
 from datetime import datetime
 
-data = np.loadtxt('C:/Users/VW1WBMY/AdventofCode/Day04/Input_Real_Day04.txt', dtype=str)
+data = np.loadtxt('Input_Real_Day04.txt', dtype=str)
 
 count = 0
 
@@ -62,8 +62,8 @@ for i in range(len(data)-3):
             
 print(count)    
             
-#Summary: 
-    #E1) Calculated diagonal directions twice (e.g. down right XMAS already covers up left SAMX)
+#Summary of challenges: 
+    #E1) Calculated diagonal directions twice (e.g. "down right XMAS" already covers "up left SAMX")
     #E2) Out of bounds in range function/ calculation -> calculate stop value down by -3
     #E3) Worked with negative array positions -> Define start-value in range function
     
