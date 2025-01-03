@@ -2,12 +2,12 @@
 """
 Created on Wed Jan  1 16:29:49 2025
 
-@author: VW1WBMY
+@author: Marboe
 """
-import re 
+#task1
 from datetime import datetime
 
-with open('C:/Users/VW1WBMY/AdventofCode/Day03/input_data_Day03.txt') as file:
+with open('input.txt') as file:
     data = file.read()
 #print(data)
 
@@ -27,16 +27,3 @@ dtafter = datetime.now()
 
 diff = dtafter - dtbefore   
 print(diff.total_seconds())
-
-#Approach for second task of day 4
-# =============================================================================
-# key = "mul\(\d+,\d+\)"
-# result1 = re.findall(key, data)
-# print(result1)
-# 
-# for i in result1: 
-#     a, b = nums(i)
-#     count+=a*b
-#     
-# =============================================================================
-    
