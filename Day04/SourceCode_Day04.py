@@ -24,7 +24,7 @@ for i in range(len(data)):
             count+=1
             
 #checks XMAS in a column
-for i in range(len(data)-3): #ChatGPT helped here; Error "index 10 is out of bounds for axis 0 with size 10" without -3
+for i in range(len(data)-3): 
     for j in range(len(data[i])):
         if (data[i][j]=='X' and data[i+1][j]=='M' and data[i+2][j]=='A' and data[i+3][j]=='S'):
             count+=1           
