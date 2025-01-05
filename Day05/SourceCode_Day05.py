@@ -8,7 +8,7 @@ import numpy as np
 from datetime import datetime
 
 #Einlesen der Druckregeln
-with open('C:/Users/VW1WBMY/AdventofCode/Day05/Example_Input_Day05.txt', 'r') as file:
+with open('Example_Input_Day05.txt', 'r') as file:
     datarules = []
     for line in file:
         if line.strip() == '':
@@ -17,7 +17,7 @@ with open('C:/Users/VW1WBMY/AdventofCode/Day05/Example_Input_Day05.txt', 'r') as
 #print("datarules", datarules)
 
 #Einlesen des zu prüfenden Druck-Datensatzes
-with open('C:/Users/VW1WBMY/AdventofCode/Day05/Real_Input_Day05.txt', 'r') as file:
+with open('Example_Input_Day05.txt', 'r') as file:
     dataset = []
     empty_line_found = False
     for line in file:
@@ -59,11 +59,8 @@ for i in range(len(dataset)):
     for j in range(len(dataset[i])): 
         x=dataset[i][j]
         a=Prüfalg_Rückwärts(x, i, j)
-        print("Wert für a = {}", a)
         b=Prüfalg_Vorwärts(x,i,j)
-        print("Wert für b = {}", b)
         if (a+b >=1):
-            print("Datenreihe {} entspricht nicht dem Regelwerk".format(i))
             break
     if (a+b==0):
         print("J is here:{}".format(j))
@@ -71,5 +68,3 @@ for i in range(len(dataset)):
         count+=int(dataset[i][int(j/2)])
 
 print("Gesamtzähler{}".format(count))
-
-
